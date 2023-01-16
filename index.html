@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ai-tools.live is a website where You can access all ai Tools , You are using on daily basis"/>
+    <title>All AI Tools in a Single Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/655c589984.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/Untitled_design__10_-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="first-section">
+
+        
+
+        <nav>
+            <img src="./img/Untitled_design__10_-removebg-preview.png">
+     <ul>
+                <li> <a href="">Home</a> </li>
+                <li>  <a href="#ft">Contact</a></li>
+                <li> <a href="#tools">Tools</a> </li>
+              <a href="https://www.buymeacoffee.com/alisufian" alt="Logo"><button>Support Us</button></a>
+
+            </ul>
+    </nav>
+
+    <div class="body-content">
+        <h1 class="Text">Access All AI Tools</h1>
+        <p>From this Website You Can access All AI Tools You Needed in Your Daily Life</p>
+        <button><a href="#tools">Explore Tools</a></button>
+
+    </div>
+   
+
+    </div>
+
+<div class="Tools">
+    <h1 id="tools">Tools</h1>
+    <!-- Row #1  -->
+    <div class="row">
+        <div class="bx">
+            <h3>ChatGPT</h3>
+            <img src="https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png" alt="ChatGPT">
+            <p>A ChatBot Created By Open AI</p>
+            <button> <a href="https://chat.openai.com/"> Visit </a></button>
+        </div>
+        <div class="bx">
+            <h3>Copy.ai</h3>
+            <img src="./img/lwumruy6fbpftzfu2rxj.png" alt="logo of Copy.ai">
+            <p>Copywriter By Paul Yacoubian.</p>
+            <button> <a href="https://www.copy.ai/">Visit</a></button>
+
+        </div>
+        <div class="bx">
+            <h3>Fotor</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Fotor_logo.png" alt="logo of Fotor">
+            <p>Text to Image Generator</p>
+            <button> <a href="https://www.fotor.com/">Visit</a></button>
+        </div>
+        <div class="bx">
+            <h3>Warmer.ai</h3>
+            <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" alt="logo of Warmer.ai">
+            <p>AI Email Writer</p>
+            <button><a href="https://warmer.ai/">Visit</a></button>
+        </div>
+    </div>
+
+    <!-- Row #2  -->
+
+    <div class="row">
+        <div class="bx">
+            <h3>QuillBot</h3>
+            <img src="./img/630f866dd5353300f4bd3292.png" alt="logo of QuillBot">
+            <p>Paraphrasing Tool</p>
+            <button> <a href="https://quillbot.com/">Visit</a></button>
+        </div>
+        <div class="bx">
+            <h3>convertio.co</h3>
+            <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/54db64030000ff00057d5973/0x0.png" alt="logo of convertio.co">
+            <p>JPG To AI Converter.</p>
+            <button> <a href="https://convertio.co/jpg-ai/">Visit</a></button>
+
+        </div>
+        <div class="bx">
+            <h3>synthesia.io</h3>
+            <img src="./img/syn.jpg" alt="logo of synthesia.io">
+            <p>AI Video Generator</p>
+            <button><a href="https://www.synthesia.io/"></a>Visit</button>
+        </div>
+        <div class="bx">
+            <h3>originality.ai</h3>
+            <img src="https://originality.ai/wp-content/uploads/2022/12/originality.AI-Logo-Square-for-small-images-1.png" alt="logo of originality.ai">
+            <p>Plagiarism Checker</p>
+            <button><a href="https://originality.ai/">Visit</a></button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Row #2 Ennnnnnnnndddddddd  -->
+
+<div class="pageCounts">
+    <p>Page Views : &nbsp; </p>
+    <p id="count"> 0 &nbsp;</p>
+    <p></p>
+</div>
+
+<div class="footer" id="ft">
+    <img src="./img/Untitled_design__10_-removebg-preview.png">
+    <p>Contact Me on the following Social Media Accounts</p>
+    <div class="socialIcons">
+      <a href="https://twitter.com/aliscodes"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/alis.code/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ali-sufian-398072247/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+     <p> Made By <a href="https://twitter.com/aliscodes">Ali Sufian</a>  &copy; CopyRight 2023. All Rights Reserved. </p>
+    </div>
+</div>
+
+<script>
+    const countE1 = document.getElementById('count');
+    countvisits()
+    function countvisits() {
+        fetch("https://api.countapi.xyz/update/all-ai-tools.site/aitools/?amount=1")
+        .then((res) => res.json())
+        .then((res) =>{
+            countE1.innerHTML = res.value;
+        })
+    }
+</script>
+</body>
+
+</html>
